@@ -158,6 +158,11 @@ body {
     }
 
 }
+@media (max-width: 798px){
+    .main_block_card_media849 h5 {
+        margin-bottom: 50px;
+    }
+}
 @media (max-width: 714px){
     .main_block_card_media849 h5 {
         margin-bottom: 50px;
