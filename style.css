@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 50px 50px 10px;
+}
+.header {
+    font-family: "roboto";
+}
+.header h6 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+.header li {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: red;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+.header li span {
+    color: #131718;
+}
+.main_block {
+    display: flex;
+    margin: 50px 0;
+}
+.main_block_card {
+    margin-right: calc(30px + (128 - 30) * (100vw - 800px) / (1280 - 800));
+}
+.main_block_card h5 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card_download {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_upload {
+    display: flex;
+    justify-content: space-around;
+}
+.test {
+    width: 85px;
+    height: 100px;
+}
+.test_inline {
+    display: inline-block;
+}
+.test_inline:hover {
+    cursor: pointer;
+}
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.circle_download {
+    width: 27px;
+    height: 27px;
+    border: 3px solid #c4c4c4;
+    border-radius: 20px;
+    position: relative;
+    z-index: 10;
+    left: 50px;
+    background-color: #ed1631;
+    margin: 0;
+    display: inline-block;
+}
+
+.circle_download img {
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.rectangle {
+    width: 65px;
+    height: 80px;
+    border: 5px solid #c4c4c4;
+    border-radius: 10px;
+    color: #ed1631;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -25px;
+    
+}
+.rectangle a {
+    color: #ed1631;
+    display: block;
+    text-align: center;
+}
+.rectangle h2 {
+    margin: 0;
+}
+.rectangle_upload h2{
+    margin: 23px 0 0;
+    text-align: center;
+}
+
+.rectangle h3 {
+    margin: 0;
+}
+.main_block_card_text {
+    text-align: center;
+    color: #ed1631;
+    margin-bottom: 30px;
+}
+.main_block_card_button {
+    border: none;
+    border-radius: 40px;
+    background-color: #ed1631;
+    padding: 10px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 154%;
+}
+.main_block_card_button:hover{
+    background-color: #d6142e;
+    cursor: pointer;
+    box-shadow: 10px 0px 30px 10px rgba(0,0,0,0.1);
+}
+.main_block_card_m{
+    text-align:center;
+}
+.footer {
+    background-color: #eeeeee;
+    border: 2px solid red;
+}
+
+.footer p {
+    margin: 0;
+    padding: 15px;
+}
+
+
+@media (max-width: 849px) {
+    body{
+        margin: 30px 40px 10px;
+    }
+
+}
+@media (max-width: 714px){
+    .main_block_card_media849 h5 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 660px) {
+    .header li{
+        margin-left: 30px;
+    }
+    .main_block {
+        flex-direction: column;
+    }
+    .main_block_card{
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+    .main_block_card_media849 h5{
+        margin-bottom: 20px;
+    }
+    .card_download{
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .card_upload{
+        justify-content: space-evenly;
+    }
+
+}
+@media (max-width: 480px){
+    body{
+        margin: 20px 10px 10px;
+    }
+    .header h6{
+        margin-left: 15px;
+    }
+}
